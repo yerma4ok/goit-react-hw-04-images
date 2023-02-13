@@ -1,4 +1,4 @@
-import { useState, useEffect  } from 'react';
+import { useState, useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import * as API from '../pictures/api';
@@ -9,7 +9,7 @@ import Loader from './Loader';
 import Button from './Button';
 import Modal from './Modal';
 
-function App() {
+export default function App() {
   const [searchImage, setSearchImage] = useState('');
   const [images, setImages] = useState([]);
   const [page, setPage] = useState(1);
@@ -83,5 +83,3 @@ function App() {
     </>
   );
 }
-
-export default App;
